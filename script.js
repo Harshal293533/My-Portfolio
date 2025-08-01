@@ -1,29 +1,16 @@
-<script>
   document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menu-btn');
     const navMenu = document.getElementById('nav-menu');
 
-    let menuOpen = false;
-
+    // Toggle menu visibility on button click
     menuBtn.addEventListener('click', () => {
-      menuOpen = !menuOpen;
-
-      if (menuOpen) {
-        navMenu.classList.remove('max-h-0');
-        navMenu.classList.add('max-h-96'); // adjust height as needed
-      } else {
-        navMenu.classList.remove('max-h-96');
-        navMenu.classList.add('max-h-0');
-      }
+      navMenu.classList.toggle('hidden');
     });
 
-    // Optional: Close menu on link click (on mobile)
+    // Hide menu when a link is clicked (on mobile)
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('max-h-96');
-        navMenu.classList.add('max-h-0');
-        menuOpen = false;
+        navMenu.classList.add('hidden');
       });
     });
   });
-</script>

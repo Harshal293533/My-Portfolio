@@ -1,0 +1,79 @@
+:root {
+            --accent-glow: 66, 179, 255; /* Cool blue */
+            --accent-main: #42b3ff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0d1226;
+            background: radial-gradient(circle at 20% 20%, rgba(var(--accent-glow), 0.15) 0%, #0d1226 35%);
+            color: #fff;
+        }
+
+        .highlight {
+            color: rgb(var(--accent-glow));
+        }
+
+        /* Hero Avatar */
+        .avatar {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #fff 10%, #aaa 80%);
+            background-size: cover;
+            box-shadow: 0 0 20px rgba(var(--accent-glow), 0.6);
+        }
+
+        /* Typewriter effect */
+        .typewriter h1 {
+            font-size: rem;
+            overflow: hidden;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            animation: typing 4s steps(30, end) forwards, blink-caret .75s step-end 7;
+            animation-delay: 0s;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: rgba(255, 255, 255, 0.75);
+            }
+        }
+
+        /* Glow Cards */
+        .glow-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        .glow-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(var(--accent-glow), 0.6), 0 0 40px rgba(var(--accent-glow), 0.4);
+        }
+
+        /* About Section Image */
+        .about-img-wrapper {
+            box-shadow: 0 0 18px rgba(var(--accent-glow), 0.6), 0 0 38px rgba(var(--accent-glow), 0.4);
+        }
+
+        /* Glassmorphism Effect */
+        .bg-dark-glass {
+            background: rgba(14, 30, 51, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }

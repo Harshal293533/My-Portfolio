@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Harshal Borole</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent-glow: 66, 179, 255;
+      --accent-main: #42b3ff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0d1226;
+      background: radial-gradient(circle at 20% 20%, rgba(var(--accent-glow), 0.15) 0%, #0d1226 35%);
+      color: #fff;
+    }
+
+    .about-img-wrapper {
+      box-shadow: 0 0 18px rgba(var(--accent-glow), 0.6), 0 0 38px rgba(var(--accent-glow), 0.4);
+    }
+
+    .bg-dark-glass {
+      background: rgba(14, 30, 51, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="py-20 px-4 min-h-screen flex items-center">
+    <div class="container mx-auto">
+      <div class="flex flex-col lg:flex-row items-center gap-12 bg-dark-glass p-10 rounded-2xl shadow-xl">
+
+        <!-- Profile Image -->
+        <div class="w-full lg:w-5/12 text-center">
+          <div class="about-img-wrapper rounded-2xl overflow-hidden max-w-sm mx-auto">
+            <img src="IMG_20230905_194137_782.jpg" alt="About Harshal" class="w-full h-auto block rounded-xl" />
+          </div>
+        </div>
+
+        <!-- About Text -->
+        <div class="w-full lg:w-7/12">
+          <span class="text-sm font-semibold text-[var(--accent-main)] uppercase tracking-wider mb-3 block">About Me</span>
+          <h2 class="text-4xl font-bold mb-6">Hi, I'm Harshal Borole 👋</h2>
+          <p class="text-gray-300 mb-4">
+            I’m a passionate Java and Web Developer with a strong eye for design and an even stronger love for building powerful applications.
+            From crafting responsive frontends to developing efficient backends, I thrive on turning ideas into reality.
+          </p>
+          <p class="text-gray-300 mb-4">
+            My main expertise lies in Java technologies like Spring Boot, JSP, Servlets, and SQL, alongside a solid foundation in frontend tools like HTML, CSS, Tailwind, and JavaScript. I also create intuitive UI/UX designs using Figma.
+          </p>
+          <p class="text-gray-300 mb-6">
+            Since 2019, I've been combining technical knowledge with creativity to deliver polished digital experiences.
+          </p>
+
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+            <li>✅ Bachelor's in Computer Applications (BCA)</li>
+            <li>✅ Skilled in full-stack development</li>
+            <li>✅ Committed to continuous learning & innovation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email | Harshal Borole</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0f1f400.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --accent-glow: 66, 179, 255;
+      --accent-main: #42b3ff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0d1226;
+      background: radial-gradient(circle at 20% 20%, rgba(var(--accent-glow), 0.15) 0%, #0d1226 35%);
+      color: #fff;
+    }
+
+    .bg-dark-glass {
+      background: rgba(14, 30, 51, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .form-input {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .form-input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-accent {
+      background-color: var(--accent-main);
+      color: white;
+    }
+
+    .btn-accent:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mail Contact Section -->
+  <section class="min-h-screen flex items-center justify-center px-4 py-20">
+    <div class="max-w-3xl w-full bg-dark-glass p-10 rounded-2xl shadow-lg">
+      <h1 class="text-4xl font-bold text-center mb-8">Send Me a Message ✉️</h1>
+      <form action="mailto:harshalborole000@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+        <div>
+          <label for="name" class="block mb-2 text-sm font-semibold">Your Name</label>
+          <input type="text" id="name" name="Name" required placeholder="Enter your name" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent-main)]">
+        </div>
+        <div>
+          <label for="email" class="block mb-2 text-sm font-semibold">Your Email</label>
+          <input type="email" id="email" name="Email" required placeholder="you@example.com" class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent-main)]">
+        </div>
+        <div>
+          <label for="message" class="block mb-2 text-sm font-semibold">Your Message</label>
+          <textarea id="message" name="Message" rows="5" required placeholder="Write your message..." class="form-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent-main)]"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn-accent px-8 py-3 rounded-full font-semibold transition-colors duration-300">Send Email</button>
+        </div>
+      </form>
+
+      <!-- Optional Footer Social Links
+      <div class="mt-10 text-center space-x-6 text-2xl">
+        <a href="https://github.com/Harshal293533" class="text-[var(--accent-main)] hover:text-white transition" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/harshal-borole-605a142a5" class="text-[var(--accent-main)] hover:text-white transition" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:harshalborole000@gmail.com" class="text-[var(--accent-main)] hover:text-white transition" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a> -->
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

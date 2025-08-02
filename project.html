@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Harshal Borole</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent-glow: 66, 179, 255;
+      --accent-main: #42b3ff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0d1226;
+      background: radial-gradient(circle at 20% 20%, rgba(var(--accent-glow), 0.15) 0%, #0d1226 35%);
+      color: #fff;
+    }
+
+    .bg-dark-glass {
+      background: rgba(14, 30, 51, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .badge {
+      background-color: var(--accent-main);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-12">Projects</h2>
+
+      <div class="grid gap-12">
+        <!-- Project 1 -->
+        <div class="bg-dark-glass p-8 rounded-2xl shadow-lg max-w-5xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="w-full md:w-5/12">
+              <img src="property-1.jpg" alt="Makaan Real Estate" class="w-full rounded-2xl shadow-md">
+            </div>
+            <div class="w-full md:w-7/12 text-left">
+              <h4 class="text-2xl font-semibold mb-2">Makaan Real Estate</h4>
+              <p class="text-gray-300 mb-4">
+                A platform for buying, selling, and renting properties with detailed listings and real-time visitor tracking.
+              </p>
+              <ul class="list-disc list-inside space-y-1 mb-4 text-gray-300">
+                <li>✔ Role-based Login</li>
+                <li>✔ OTP verification for security</li>
+                <li>✔ Exportable visitor reports</li>
+              </ul>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge">Java</span>
+                <span class="badge">JSP</span>
+                <span class="badge">Servlet</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-dark-glass p-8 rounded-2xl shadow-lg max-w-5xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="w-full md:w-5/12">
+              <img src="SAVE_20231028_145631.jpg" alt="Portfolio Website" class="w-full rounded-2xl shadow-md">
+            </div>
+            <div class="w-full md:w-7/12 text-left">
+              <h4 class="text-2xl font-semibold mb-2">Personal Portfolio Website</h4>
+              <p class="text-gray-300 mb-4">
+                A sleek and responsive portfolio to showcase my skills, projects, and resume. Designed with dark theme aesthetics.
+              </p>
+              <ul class="list-disc list-inside space-y-1 mb-4 text-gray-300">
+                <li>✔ TailwindCSS-powered layout</li>
+                <li>✔ Interactive animations & transitions</li>
+                <li>✔ Mobile-first design</li>
+              </ul>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">TailwindCSS</span>
+                <span class="badge">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-dark-glass p-8 rounded-2xl shadow-lg max-w-5xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="w-full md:w-5/12">
+              <img src="20945628.jpg" alt="Event, Task Management, Task Planning, Task Schedule, - Project Management Icon@clipartmax.com">" alt="Task Manager" class="w-full rounded-2xl shadow-md">
+            </div>
+            <div class="w-full md:w-7/12 text-left">
+              <h4 class="text-2xl font-semibold mb-2">Task Manager App</h4>
+              <p class="text-gray-300 mb-4">
+                A CRUD-based task manager app to organize daily to-dos, assign deadlines, and manage priorities.
+              </p>
+              <ul class="list-disc list-inside space-y-1 mb-4 text-gray-300">
+                <li>✔ Add, edit, delete, and filter tasks</li>
+                <li>✔ Responsive and minimal UI</li>
+                <li>✔ Stored using localStorage</li>
+              </ul>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge">JavaScript</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

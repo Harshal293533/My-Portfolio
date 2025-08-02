@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Harshal Borole</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2e0f1f400.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --accent-glow: 66, 179, 255;
+      --accent-main: #42b3ff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0d1226;
+      background: radial-gradient(circle at 20% 20%, rgba(var(--accent-glow), 0.15) 0%, #0d1226 35%);
+      color: white;
+    }
+
+    .bg-glass {
+      background: rgba(14, 30, 51, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .contact-icon {
+      color: var(--accent-main);
+    }
+
+    .contact-box:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="min-h-screen flex items-center justify-center px-4 py-20">
+    <div class="max-w-3xl w-full bg-glass p-10 rounded-2xl shadow-lg">
+      <h1 class="text-4xl font-bold text-center mb-8">Contact Me 📬</h1>
+      <p class="text-center text-gray-300 mb-10">Feel free to reach out to me through any of the channels below.</p>
+
+      <div class="space-y-6">
+        <!-- Phone -->
+        <div class="contact-box flex items-center gap-4 p-4 rounded-xl transition hover:shadow-md">
+          <i class="fas fa-phone-alt text-2xl contact-icon"></i>
+          <div>
+            <h3 class="text-lg font-semibold">Phone</h3>
+            <p class="text-gray-300">+91 9075536982</p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-box flex items-center gap-4 p-4 rounded-xl transition hover:shadow-md">
+          <i class="fas fa-envelope text-2xl contact-icon"></i>
+          <div>
+            <h3 class="text-lg font-semibold">Email</h3>
+            <a href="mailto:harshalborole000@gmail.com" class="text-gray-300 hover:text-white">hborole21@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-box flex items-center gap-4 p-4 rounded-xl transition hover:shadow-md">
+          <i class="fab fa-github text-2xl contact-icon"></i>
+          <div>
+            <h3 class="text-lg font-semibold">GitHub</h3>
+            <a href="https://github.com/Harshal293533" target="_blank" class="text-gray-300 hover:text-white">github.com/Harshal293533</a>
+          </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-box flex items-center gap-4 p-4 rounded-xl transition hover:shadow-md">
+          <i class="fab fa-linkedin text-2xl contact-icon"></i>
+          <div>
+            <h3 class="text-lg font-semibold">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/harshal-borole-605a142a5" target="_blank" class="text-gray-300 hover:text-white">linkedin.com/in/harshal-borole-605a142a5</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional Back to Home Link -->
+      <div class="text-center mt-10">
+        <a href="index.html" class="text-sm text-[var(--accent-main)] hover:underline">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
